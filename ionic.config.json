@@ -1,5 +1,7 @@
 {
   "name": "EstatutosRcc",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
