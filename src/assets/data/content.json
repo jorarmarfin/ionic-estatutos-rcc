@@ -1,54 +1,55 @@
 [
-    {
-        "nombre" : "Presentación"
-    },
-    {
-        "nombre" : "Estatuto de la Renovación Carismática Católica",
+  {
+    "nombre": "Presentación",
+    "nivel": 0
+  },
+  {
+    "nombre": "Estatuto de la Renovación Carismática Católica",
+    "nivel": 0,
+    "contenido": [
+      {
+        "nombre": "I. De la definición y fines",
         "contenido": [
-            {
-                "nombre": "I. De la definición y fines",
-                "contenido":[
-                    {
-                        "nombre": "1. Definición y Principios como Movimiento Catolico en el Mundo",
-                        "contenido":[
-                            {
-                                "titulo": "",
-                                "nombre":"Artículo 1°",
-                                "contenido":"<p>La Renovaci&oacute;n Carism&aacute;tica Cat&oacute;lica</p><ol style='list-style-type: lower-alpha;'><li>Espiritualmente&nbsp;</li> <li>Funcionalmente y Org&aacute;nicamente</li> </ol>"
-                            }
-                        ]
-
-                    },
-                    {
-                        "nombre": "2. Denominacion Social en el Perú"
-                    }
-                ]
-            },
-            {
-                "nombre": "II. De la Organizacion"
-            },
-            {
-                "nombre": "III. De las Comunidades Carismáticas"
-            },
-            {
-                "nombre": "IV. Patrimonio"
-            },
-            {
-                "nombre": "V. De los servicios de creación, Difusión y propagación de los Materiales de la RCC Perú"
-            },
-            {
-                "nombre": "VI. De las Organizaciones Promotoras de la Evangelización RCC Perú"
-            },
-            {
-                "nombre": "VII. Disolución y Liquidación de la asociación RCC Perú"
-            },
-            {
-                "nombre": "VII. Disposiciones Finales"
-            }
+          {
+            "nombre": "1. Definición y Principios como Movimiento Catolico en el Mundo",
+            "contenido": [
+              {
+                "titulo": "",
+                "nombre": "Artículo 1°",
+                "contenido": "<p>La Renovaci&oacute;n Carism&aacute;tica Cat&oacute;lica</p><ol style='list-style-type: lower-alpha;'><li>Espiritualmente&nbsp;</li> <li>Funcionalmente y Org&aacute;nicamente</li> </ol>"
+              }
+            ]
+          },
+          {
+            "nombre": "2. Denominacion Social en el Perú"
+          }
         ]
-
-    },
-    {
-        "nombre" : "Anexos"
-    }
+      },
+      {
+        "nombre": "II. De la Organizacion"
+      },
+      {
+        "nombre": "III. De las Comunidades Carismáticas"
+      },
+      {
+        "nombre": "IV. Patrimonio"
+      },
+      {
+        "nombre": "V. De los servicios de creación, Difusión y propagación de los Materiales de la RCC Perú"
+      },
+      {
+        "nombre": "VI. De las Organizaciones Promotoras de la Evangelización RCC Perú"
+      },
+      {
+        "nombre": "VII. Disolución y Liquidación de la asociación RCC Perú"
+      },
+      {
+        "nombre": "VII. Disposiciones Finales"
+      }
+    ]
+  },
+  {
+    "nombre": "Anexos",
+    "nivel": 0
+  }
 ]
