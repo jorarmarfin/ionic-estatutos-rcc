@@ -1,17 +1,38 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="danger">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
+      <ion-thumbnail>
+        <img src="../assets/icon/rcc.png" width="100px" />
+      </ion-thumbnail>
     </ion-buttons>
-    <ion-title>Estatutos de la RCC - Perú</ion-title>
+    <ion-title><h1><strong>Estatuto de la RCC - Perú</strong></h1></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item *ngFor="let item of lista">
-      <ion-label>{{ item.nombre }}</ion-label><br>
-    </ion-item>
-  </ion-list>
+  <ion-grid fixed >
+    <ion-row>
+      <ion-col size="12" class="ion-text-justify">
+        <ion-text color="dark" *ngFor="let item of data" class="animate__animated animate__fadeIn">
+          <h1><strong>{{ item.titulo }}</strong></h1>
+          <h2><strong>{{ item.nombre }}</strong></h2>
+          <p [innerHTML]=item.contenido></p>
+        </ion-text>
+      
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="siguiente()" color="danger">
+      <ion-icon name="arrow-redo-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button (click)="anterior()" color="danger">
+      <ion-icon name="arrow-undo-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
 </ion-content>

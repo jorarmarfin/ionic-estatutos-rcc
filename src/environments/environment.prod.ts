@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  url: 'http://recursos.catolicosoy.net/api/v1'
 };
