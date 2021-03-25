@@ -16,6 +16,9 @@ export class OctoberService {
   getArticulos(page:number){
     return this.http.get<Articulos>(`${URL}/articulos?page=${page}`);
   }
+  getTemas(ini:number, fin:number, page:number){
+    return this.http.get<Articulos>(`${URL}/temas/${ini}/${fin}/?page=${page}`);
+  }
   // getYoutube(inicio:string,categoria: string){
 
   //   if (inicio==='si') {

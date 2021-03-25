@@ -1,4 +1,4 @@
-<ion-app>
+<ion-app><!--Para que el menu se oculte debes usar ion-menu-toggle-->
   <ion-split-pane contentId="main-content">
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
@@ -8,10 +8,18 @@
         </ion-list>
 
         <ion-list id="labels-list">
-          <ion-item lines="none">
-            <ion-icon slot="start" ios="bookmark-outline" md="bookmark-sharp"></ion-icon>
-            <ion-label>Busqueda por articulos</ion-label>
-          </ion-item>
+          <ion-menu-toggle>
+            <ion-item routerLink="/inicio">
+              <ion-label>Inicio</ion-label>
+            </ion-item>
+            <ion-item routerLink="/temas">
+              <ion-label>Por Temas</ion-label>
+            </ion-item>
+            <ion-item >
+              <ion-label>Busqueda por palabras</ion-label>
+            </ion-item>
+  
+          </ion-menu-toggle>
         </ion-list>
       </ion-content>
     </ion-menu>

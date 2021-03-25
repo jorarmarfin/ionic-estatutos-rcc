@@ -40,9 +40,7 @@ export class InicioPage implements OnInit {
     }
     this.cargarArticulos();
   }
-  cargarArticulos(){
-    
-    console.log(this.pagina);
+  cargarArticulos(){    
     this.october.getArticulos(this.pagina).subscribe(resp=>{
       this.articulos = resp;
       this.data = resp.data;
