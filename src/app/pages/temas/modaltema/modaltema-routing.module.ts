@@ -1,16 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { TemasPage } from './temas.page';
+import { ModaltemaPage } from './modaltema.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: TemasPage
-  },
-  {
-    path: 'modaltema',
-    loadChildren: () => import('./modaltema/modaltema.module').then( m => m.ModaltemaPageModule)
+    component: ModaltemaPage
   }
 ];
 
@@ -18,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class TemasPageRoutingModule {}
+export class ModaltemaPageRoutingModule {}

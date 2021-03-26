@@ -1,0 +1,11 @@
+ion-content{
+    --background: url('/assets/images/cover.png') ;
+}
+
+$padding-collection: (20,40,60,80);
+
+@each $padding in $padding-collection {
+    .p-l-#{$padding}{
+        padding-left: $padding+px;
+    }
+}

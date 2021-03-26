@@ -16,16 +16,12 @@ export class OctoberService {
   getArticulos(page:number){
     return this.http.get<Articulos>(`${URL}/articulos?page=${page}`);
   }
-  getTemas(ini:number, fin:number, page:number){
+  getTemas(ini:number, fin:number, page:number=0){
     return this.http.get<Articulos>(`${URL}/temas/${ini}/${fin}/?page=${page}`);
   }
-  // getYoutube(inicio:string,categoria: string){
+  Buscar(palabra:string,page:number=0){
+    return this.http.get<Articulos>(`${URL}/busca-articulos/${palabra}?page=${page}`);
+  }
 
-  //   if (inicio==='si') {
-  //     this.pagina = 1;
-  //   } else {
-  //     this.pagina++;
-  //   }
-  //   return this.http.get<RespuestaOctober>(`${URL}/youtube/${categoria}?page=${this.pagina}`);
-  // }
+
 }

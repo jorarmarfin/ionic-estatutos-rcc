@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title><h1><strong>Buscar</strong></h1> </ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="inicio"  icon="arrow-back-outline"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar 
+  debounce="500"
+  placeholder="Busqueda por palabra"
+  (ionChange)="buscar($event)" 
+  ></ion-searchbar>
+  <ion-grid fixed >
+    <ion-row>
+      <ion-col size="12" class="ion-text-justify">
+        <ion-text color="dark" *ngFor="let item of data" class="animate__animated animate__fadeIn">
+          <h1><strong>{{ item.titulo }}</strong></h1>
+          <h2><strong>{{ item.nombre }}</strong></h2>
+          <p [innerHTML]=item.contenido></p>
+        </ion-text>
+      
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

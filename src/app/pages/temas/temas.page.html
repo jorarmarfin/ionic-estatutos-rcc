@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Tema </ion-title>
+    <ion-title><h1><strong>Estatuto por Temas</strong></h1> </ion-title>
     <ion-buttons slot="end">
       <ion-back-button defaultHref="inicio"  icon="arrow-back-outline"></ion-back-button>
     </ion-buttons>
@@ -11,5 +11,13 @@
 </ion-header>
 
 <ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Articulos del estatuto por temas</ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let item of Temas; let i=index" [class]="item.clase" (click)="presentModal(i)" text-wrap>
+      <ion-label text-wrap>{{ item.title }}</ion-label>
+    </ion-item>
+  </ion-list>
 
 </ion-content>
