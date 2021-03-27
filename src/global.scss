@@ -24,3 +24,15 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+$padding-collection: (10,20,40,60,80);
+
+@each $padding in $padding-collection {
+    .p-l-#{$padding}{
+        padding-left: $padding+px;
+    }
+}
+ion-content {
+    --background: var(--background-rcc);
+  }

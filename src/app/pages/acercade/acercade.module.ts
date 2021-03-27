@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { TemasPageRoutingModule } from './temas-routing.module';
+import { AcercadePageRoutingModule } from './acercade-routing.module';
 
-import { TemasPage } from './temas.page';
+import { AcercadePage } from './acercade.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    TemasPageRoutingModule,
+    AcercadePageRoutingModule,
     ComponentsModule
   ],
-  declarations: [TemasPage]
+  declarations: [AcercadePage]
 })
-export class TemasPageModule {}
+export class AcercadePageModule {}

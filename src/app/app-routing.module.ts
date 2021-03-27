@@ -18,6 +18,18 @@ const routes: Routes = [
   {
     path: 'buscar',
     loadChildren: () => import('./pages/buscar/buscar.module').then( m => m.BuscarPageModule)
+  },
+  {
+    path: 'historia',
+    loadChildren: () => import('./pages/historia/historia.module').then( m => m.HistoriaPageModule)
+  },
+  {
+    path: 'acercade',
+    loadChildren: () => import('./pages/acercade/acercade.module').then( m => m.AcercadePageModule)
+  },
+  {
+    path: 'creditos',
+    loadChildren: () => import('./pages/creditos/creditos.module').then( m => m.CreditosPageModule)
   }
 ];
 

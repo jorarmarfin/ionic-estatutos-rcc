@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Articulos } from '../interfaces/articulos';
+import { Posts } from '../interfaces/posts';
 
 const URL = environment.url
 
@@ -21,6 +22,9 @@ export class OctoberService {
   }
   Buscar(palabra:string,page:number=0){
     return this.http.get<Articulos>(`${URL}/busca-articulos/${palabra}?page=${page}`);
+  }
+  getPost(i:number){
+    return this.http.get<Posts>(`${URL}/post/${i}`);
   }
 
 

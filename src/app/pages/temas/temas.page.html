@@ -1,21 +1,10 @@
-<ion-header>
-  <ion-toolbar color="danger">
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title><h1><strong>Estatuto por Temas</strong></h1> </ion-title>
-    <ion-buttons slot="end">
-      <ion-back-button defaultHref="inicio"  icon="arrow-back-outline"></ion-back-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
+<app-header titulo="Estatuto por Temas"></app-header>
 <ion-content>
   <ion-list>
     <ion-list-header>
       <ion-label>Articulos del estatuto por temas</ion-label>
     </ion-list-header>
-    <ion-item *ngFor="let item of Temas; let i=index" [class]="item.clase" (click)="presentModal(i)" text-wrap>
+    <ion-item *ngFor="let item of Temas; let i=index" [class]="item.clase" (click)="presentModal(i)" text-wrap class="item-background-rcc">
       <ion-label text-wrap>{{ item.title }}</ion-label>
     </ion-item>
   </ion-list>

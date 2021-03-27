@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { TemasPageRoutingModule } from './temas-routing.module';
+import { HistoriaPageRoutingModule } from './historia-routing.module';
 
-import { TemasPage } from './temas.page';
+import { HistoriaPage } from './historia.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    TemasPageRoutingModule,
+    HistoriaPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [TemasPage]
+  declarations: [HistoriaPage]
 })
-export class TemasPageModule {}
+export class HistoriaPageModule {}
